@@ -1,3 +1,4 @@
+import RightSearchZone from "./_component/RightSearchZone";
 import styles from "./layout.module.css";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -12,7 +13,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className={styles.rightSectionInner}>
           <main className={styles.main}>{children}</main>
           <section className={styles.rightSection}>
-            <form className={styles.search}></form>
+            <RightSearchZone />
           </section>
         </div>
       </div>
