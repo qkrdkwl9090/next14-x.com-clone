@@ -5,6 +5,7 @@ import Image from "next/image";
 import NavMenu from "./_component/NavMenu";
 import LogoutButton from "./_component/LogoutButton";
 import Logo from "../../../public/logo.png";
+import TrendSection from "./_component/TrendSection";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -44,6 +45,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <main className={styles.main}>{children}</main>
           <section className={styles.rightSection}>
             <RightSearchZone />
+            <TrendSection />
           </section>
         </div>
       </div>
