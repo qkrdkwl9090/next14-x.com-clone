@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "@/app/page.module.css";
 import Link from "next/link";
 import Logo from "../../../public/logo.png";
+import cx from "classnames";
 
 export default function Home() {
   return (
@@ -14,15 +15,12 @@ export default function Home() {
         <h2>지금 가입하세요.</h2>
         <Link
           href="/i/flow/signup"
-          className={`${styles.signup} ${styles.button}`}
+          className={cx(styles.signup, styles.button)}
         >
           계정 만들기
         </Link>
         <h3>이미 트위터에 가입하셨나요?</h3>
-        <Link
-          href="/i/flow/login"
-          className={`${styles.login} ${styles.button}`}
-        >
+        <Link href="/i/flow/login" className={cx(styles.login, styles.button)}>
           로그인
         </Link>
       </div>
