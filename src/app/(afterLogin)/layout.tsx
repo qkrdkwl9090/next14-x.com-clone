@@ -7,8 +7,15 @@ import LogoutButton from "./_components/LogoutButton";
 import Logo from "../../../public/logo.png";
 import TrendSection from "./_components/TrendSection";
 import FollowRecommendSection from "./_components/FollowRecommendSection";
+import React from "react";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+export default function Layout({
+  children,
+  modal,
+}: {
+  children: React.ReactNode;
+  modal: React.ReactNode;
+}) {
   return (
     <div className={styles.container}>
       <header className={styles.leftSectionWrapper}>
@@ -51,6 +58,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           </section>
         </div>
       </div>
+      {modal}
     </div>
   );
 }
