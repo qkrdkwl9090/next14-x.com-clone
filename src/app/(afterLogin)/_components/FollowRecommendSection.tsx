@@ -1,5 +1,5 @@
 "use client";
-import FollowRecommend from "@/app/(afterLogin)/_component/FollowRecommend";
+import FollowRecommend from "@/app/(afterLogin)/_components/FollowRecommend";
 
 const users = [
   {

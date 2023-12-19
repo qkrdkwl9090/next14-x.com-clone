@@ -1,7 +1,7 @@
 "use client";
 
 import style from "./trendSection.module.css";
-import Trend from "@/app/(afterLogin)/_component/Trend";
+import Trend from "@/app/(afterLogin)/_components/Trend";
 import { usePathname } from "next/navigation";
 
 export default function TrendSection() {

@@ -1,12 +1,12 @@
 import Link from "next/link";
-import RightSearchZone from "./_component/RightSearchZone";
+import RightSearchZone from "./_components/RightSearchZone";
 import styles from "./layout.module.css";
 import Image from "next/image";
-import NavMenu from "./_component/NavMenu";
-import LogoutButton from "./_component/LogoutButton";
+import NavMenu from "./_components/NavMenu";
+import LogoutButton from "./_components/LogoutButton";
 import Logo from "../../../public/logo.png";
-import TrendSection from "./_component/TrendSection";
-import FollowRecommendSection from "./_component/FollowRecommendSection";
+import TrendSection from "./_components/TrendSection";
+import FollowRecommendSection from "./_components/FollowRecommendSection";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

@@ -2,7 +2,7 @@
 
 import style from "./rightSearchZone.module.css";
 import { usePathname } from "next/navigation";
-import SearchForm from "@/app/(afterLogin)/_component/SearchForm";
+import SearchForm from "@/app/(afterLogin)/_components/SearchForm";
 
 export default function RightSearchZone() {
   const pathname = usePathname();
