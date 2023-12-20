@@ -12,4 +12,7 @@ pnpm i
 
 # run
 pnpm dev
+
+# MSW Mock run
+pnpm mock
 ```
